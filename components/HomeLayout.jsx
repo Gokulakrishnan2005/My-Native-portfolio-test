@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { ScrollView, View } from 'react-native';
+import { View } from 'react-native';
 import Header from './Header';
 import Portfolio from './Portfolio';
 

@@ -1,10 +1,8 @@
 import React from 'react';
 import { View, Text, TouchableOpacity } from 'react-native';
-import { useTailwind } from 'twrnc';
+import tw from 'twrnc';
 
 const Header = ({ scrollToAbout, scrollToProjects, scrollToContact }) => {
-  const tw = useTailwind();
-
   return (
     <View>
       <View style={tw`bg-[#d9d9d9] py-6 px-6 flex-row justify-between items-center`}>
