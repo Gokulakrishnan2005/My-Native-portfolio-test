@@ -1,6 +1,7 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, ScrollView, TextInput, Linking } from 'react-native';
-import { useTailwind } from 'twrnc';
+import { Image } from 'expo-image';
+import tw from 'twrnc';
 import { AntDesign, FontAwesome } from '@expo/vector-icons';
 // import emailjs from 'emailjs-com'; // Commented out for React Native
 
@@ -52,8 +53,6 @@ const projectsData = [
   
   
   const Portfolio = ({ scrollViewRef, aboutRef, projectsRef, contactRef, aboutY, projectsY, contactY }) => {
-  const tw = useTailwind();
-  const form = useRef();
   const [activeCategory, setActiveCategory] = useState("all category");
 
   const filteredProjects =
@@ -209,11 +208,11 @@ const projectsData = [
       {/* Contact Section */}
       <View style={tw`px-6 py-16 bg-[#e6e6e6]`}>
         <View style={tw`max-w-6xl mx-auto`}>
-          <Text style={tw`text-4xl font-bold mb-10 text-center`}>Let's Work Together</Text>
+          <Text style={tw`text-4xl font-bold mb-10 text-center`}>Let&apos;s Work Together</Text>
           <View style={tw`flex-col flex-wrap justify-center gap-12`}>
             <View style={tw`flex-1`}>
               <Text style={tw`text-[#484848] mb-6 text-lg`}>
-                I'm open to freelance opportunities and collaborations. Feel free to reach out if you're looking for a developer who can bring your ideas to life.
+                I&apos;m open to freelance opportunities and collaborations. Feel free to reach out if you&apos;re looking for a developer who can bring your ideas to life.
               </Text>
               <View style={tw`flex-row space-x-5 mt-8`}>
                 <TouchableOpacity onPress={() => Linking.openURL('https://github.com/Gokulakrishnan2005')} style={tw`text-[#0a0a0a] hover:text-[#ffb400] transition-colors duration-300`}>
